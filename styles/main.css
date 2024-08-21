@@ -1,0 +1,827 @@
+/* Resetting default styles */
+* {
+
+  box-sizing: border-box;
+  list-style-type: none;
+  top: 0;
+  text-decoration: none;
+}
+
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #E8E8E8;
+}
+
+/***********************Home page CSS  ***********************************************/
+/* Sidebar styles */
+.sidenav {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: #13293D;
+  padding: 30px 0;
+  color: #E8E8E8;
+  top: 0;
+  left: 0;
+  /* border-right: 0.2em solid black; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav a:hover {
+  color: #F52100;
+  transition: .3s;
+}
+
+.sidenav a {
+  color: #1B998B;
+
+}
+
+.sidenav li {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.six {
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  border-width: 0.2em;
+  border-color: grey;
+  padding: 0.5em;
+  padding-right: 3em;
+  padding-left: 2em;
+  border-radius: 0.5em;
+  margin-left: 1em;
+}
+
+.six:hover {
+  background-color: #F52100;
+  transition: .3s;
+  color: white;
+  border-style: solid;
+  border-color: white;
+}
+
+.six a:hover {
+  color: white;
+}
+
+.sidenav i {
+  margin-right: 0.5em;
+}
+
+.user h3 {
+  margin-top: 3em;
+  margin-left: 2.5em;
+}
+
+.profile a {
+  font-size: medium;
+  margin-left: 0.5em;
+}
+
+.sidenav h2 {
+  color: #FA8334;
+}
+
+.sidenav h2,
+.sidenav h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Main content styles */
+.content {
+  margin-left: 250px;
+  padding: 2em;
+  padding-left: 1em;
+  background-color: #ffffff;
+}
+
+.leg h2,
+.add legend {
+  color: #F52100;
+}
+
+h3 {
+  position: relative;
+  display: flex;
+  margin-right: 2em;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+}
+
+.heading::before {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 0.09em;
+  background-color: black;
+  margin: 0 10px;
+  margin-top: 0.6em;
+  border-radius: 0.7em;
+}
+
+.heading::after {
+  content: "";
+  display: inline-block;
+  width: 4em;
+  height: 0.09em;
+  background-color: black;
+  margin: 0 10px;
+  margin-top: 0.6em;
+  border-radius: 0.7em;
+}
+
+.heading {
+  font-size: 1.2em;
+}
+
+nav {
+  margin-top: 3.2em;
+}
+
+.welcome {
+  align-items: center;
+  margin-left: 1em;
+  position: relative;
+  display: flex;
+  font-size: 2em;
+}
+
+.welcome::before {
+  content: "";
+  display: inline-block;
+  width: 4em;
+  height: 2px;
+  background-color: grey;
+  margin: 0 10px;
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+}
+
+.welcome::after {
+  content: "";
+  display: inline-block;
+  width: 13em;
+  height: 2px;
+  background-color: grey;
+  margin: 0 10px;
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register h1 {
+  color: #F52100;
+}
+
+fieldset,
+.add {
+  border: 0.15em solid #98DFAF;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bucket list entry stylings */
+fieldset b,
+fieldset p,
+fieldset a {
+  color: #13293D;
+}
+
+.button a {
+  border: 0.15em solid grey;
+  border-radius: 0.5em;
+  padding: 0.3em;
+}
+
+.leg h2 a{
+  font-size: 0.5em;
+  color:#13293D;
+}
+
+
+/*************************************Login Page CSS  *****************************************/
+.logo {
+  font-size: 1.5em;
+}
+
+.login {
+  position: relative;
+  display: flex;
+}
+
+.login::before {
+  content: "";
+  display: inline-block;
+  width: 4em;
+  height: 2px;
+  background-color: grey;
+  margin: 0 10px;
+  margin-top: 0.8em;
+  border-radius: 0.5em;
+}
+
+.login::after {
+  content: "";
+  display: inline-block;
+  width: 29em;
+  height: 2px;
+  background-color: grey;
+  margin: 0 10px;
+  margin-top: 0.8em;
+  border-radius: 0.5em;
+}
+
+footer {
+  margin-top: 20em;
+  text-align: center;
+}
+
+
+.login-form {
+  max-width: 300px;
+  margin: 5em auto;
+}
+
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form div {
+  margin-bottom: 2em;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1B998B;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.man {
+  text-align: center;
+}
+
+
+.login-form input[type="submit"] {
+  background-color: #1B998B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-form h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form a {
+  color: #1B998B;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+
+
+/********************Register page styling*******************************/
+.register {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+
+.register label {
+  font-weight: bold; 
+  margin-top: 1em;
+}
+
+.register input{
+  margin-bottom: 1.3em;
+  margin-right: 15em;
+}
+.register input[type="text"],
+.register input[type="password"],
+.register textarea {
+  width: 100%;
+  padding: 1em;
+  padding-right: 2em;
+  border: 0.1em solid #1B998B;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+
+}
+
+.register input[type="checkbox"] {
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.register button {
+  /* background-color: #1B998B; */
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 14em;
+  cursor: pointer;
+  margin-top: 1em;
+  text-align: center;
+  font-size:medium;
+}
+
+
+.register a {
+  color: #1B998B;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+.register fieldset{
+  padding: 2em;
+}
+
+/***********************************View-item page  **********************************************/
+
+.top ul{
+  display:flex;
+}
+
+.top li {
+  margin-right: 1em; 
+ font-weight: bold;
+ font-size: small;
+}
+.top i{
+  color: grey;
+  font-size:x-small;
+}
+.light a{
+  color: #1B998B;
+}
+.dark a{
+  color: rgb(1, 1, 98);
+}
+.grey a{
+  color: gray;
+}
+.buttons{
+  display: flex;
+  margin-bottom: 3em;
+}
+.buttons a{
+  margin-top: 1em;
+  border-style: solid;
+  border-radius: 0.3em;
+  border-color:grey;
+  border-width: 0.1em;
+  padding: 0.5em;
+  /* margin-right: 12em; */
+  margin: auto;
+  color: black;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.8em;
+  text-align: center;
+}
+.buttons a:hover{
+  background-color: #98DFAF;
+  color:#13293D;
+}
+.buttons i{
+  margin-right: 0.2em;
+}
+.buttons p{
+  border-style: solid;
+  border-radius: 0.3em;
+  border-color:grey;
+  border-width: 0.1em;
+  padding: 0.5em;
+  margin: auto;
+  padding: 0.8em;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.indent{
+  text-indent: 2em;
+  color:#13293D;
+}
+.image-container {
+  text-align: center; 
+  margin-top: 3em;
+}
+
+.rounded-image {
+  border-radius: 20px; 
+}
+
+.caption {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#view-content{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.head1{
+  font-size: large;
+}
+/**************************Opening Page  *************************************/
+#default{
+  background-image: url('../img/background1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.first-links{
+  margin-left: 17em;
+  margin-top: 15em;
+  margin-bottom: auto;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+}
+.first-links a{
+  border-width: 0.2em;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: #1B998B;
+  padding: 1em;
+  color: black;
+  margin-right: 1em;
+  transition: background-color 0.5s;
+}
+.first-links a:hover{
+  background-color: #1B998B;
+}
+
+/**************************************forgot page CSS  ************************************/
+
+
+.forgot-form {
+  
+  max-width: 20em; 
+  margin: 0 auto; 
+}
+
+.forgot-form div {
+  margin-bottom: 2em; 
+}
+
+.forgot-form label {
+  font-weight: bold;
+}
+
+.forgot-form input[type="text"],
+.forgot-form input[type="password"] {
+  width: 100%;
+  padding: 1em; 
+  border: 1px solid #1B998B;
+  border-radius: 0.5em; 
+  margin-top: 1em; 
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.forgot-form button[type="submit"] {
+  background-color: #1B998B;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em; 
+  padding: 1em 2em; 
+  cursor: pointer;
+  margin-top: 1em; 
+  margin-left: 6em;
+}
+
+.forgot-form button[type="submit"]:hover {
+  background-color: #007d71;
+}
+
+.forgot-form h4 {
+  text-align: center;
+  margin-top: 2em; 
+}
+
+.new-password{
+  margin-top: 5em;
+}
+.reset{
+  margin-top: 5em;
+}
+
+/**********************************************edit-item page css  *****************************************/
+.edit {
+  max-width: 50em; 
+  padding: 1em; 
+  border-radius: 1em; 
+}
+.backg{
+  max-width: 60%;
+  margin: 0em 1em auto;
+}
+.edit label {
+  font-weight: bold;
+  color:#13293D;
+}
+
+.edit input[type="text"],
+.edit textarea {
+  width: 60%;
+  padding: 0.5em; 
+  border: 0.1em solid #1B998B; 
+  border-radius: 0.5em; 
+  margin-top: 0.5em; 
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2); 
+  margin-bottom: 2em;
+}
+
+.edit input[type="range"] {
+  width: 30%;
+  margin-top: 1em; 
+}
+
+.edit p {
+  color: #1B998B;
+  font-weight: bold;
+}
+
+
+.about {
+  margin-bottom: 1em;
+}
+
+.about label {
+  font-weight: bold;
+  color: #1B998B;
+}
+
+textarea#about {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #1B998B;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="date"],
+input[type="file"] {
+  width: 60%;
+  padding: 0.5em;
+  border: 1px solid #1B998B;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+button[type="submit"] {
+  background-color: #1B998B;
+  color: #fff;
+  border: none;
+  /* border-radius: 0.2em; */
+  /* padding: 0.5em 1em; */
+  cursor: pointer;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+/*****************************************public lists css ****************************************************/
+/* This inherits the same css as the index page without the addition of an add new list section */
+
+
+
+
+
+
+
+
+/**********************************************Search page css  *********************************************88*/
+#search_results {
+  margin-top: 1em;
+}
+
+.result {
+  display: column;
+  justify-content: center;
+  gap: 1em;
+  /* max-width: 70%; */
+}
+
+.result p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.rounded-image {
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+/* To place the title on top of the images */
+.result p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Random Suggestion */
+#random_suggestion {
+  margin-top: 2em; 
+}
+
+.suggestion h3 {
+  color: #1B998B;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.suggestion i {
+  font-size: 1em;
+}
+
+.suggestion p {
+  margin: 1em 0;
+}
+
+.suggestion b {
+  font-weight: bold;
+  color: #1B998B;
+  font-size: 1em;
+}
+
+.suggestion p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Search Box */
+.search-box {
+  margin: 1em auto;
+  padding: 0.5em;
+  border: 1px solid #1B998B;
+  border-radius: 2em;
+  width: 50em;
+  font-size: 1em;
+  color: #333;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Random Search Button */
+.random-search-button {
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  background-color: #1B998B;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/******************************************Add-list css ********************************************/
+.add-list {
+  max-width: 18em;
+  margin: 5em auto;
+  text-align: center;
+}
+
+.add-list h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.list label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.add-list input[type="text"],
+.add-list textarea,
+#list_name {
+  width: 100%;
+  padding: 1em;
+  border: 0.1em solid #1B998B;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+.add-list input[type="radio"] {
+  margin: 0 0.5em;
+}
+
+.add-list button[type="submit"] {
+  background-color: #1B998B;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.radio div {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.radio input[type="radio"] {
+  margin-right: 0.5em;
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.1em solid #1B998B;
+  border-radius: 50%;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.radio input[type="radio"]:checked {
+  background-color: #1B998B;
+  border: 0.1em solid #1B998B;
+}
+ 
+.radio label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.error {
+  display:inline;
+  color: red;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+div>.error {
+  /* If an error is inside a div (like, next to an input), then we don't need
+   * any extra top/bottom margins */
+  margin: 0 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.show-password-icon{
+  position: relative;
+  background-color: #F52100;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
